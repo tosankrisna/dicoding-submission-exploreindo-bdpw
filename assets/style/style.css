@@ -222,4 +222,8 @@ footer p {
     color: #fff;
 }
 
-@media screen and ()
+@media screen and (max-width: 1024px) {
+    #wisata {
+        display: unset;
+    }
+}
