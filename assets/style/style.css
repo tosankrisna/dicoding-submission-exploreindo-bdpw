@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+}
+
+nav {
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+nav ul{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0px 50px;
+    text-transform: uppercase;
+}
+
+nav li a{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+nav li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 700px;
+}
+
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.5s ease;
+    border: none;
+    margin: 0px 10px;
+    border-radius: 3px;
+    user-select: none;
+    outline: none;
+}
+
+.next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+span {
+    font-weight: bold;
+}
+
+#wisata{
+    margin-top: 15px;
+    display: flex;
+    padding: 100px 10px 0px 10px;
+}
+
+.container {
+    display: flex;
+    flex: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0px 40px 0px;
+}
+
+.card {
+    width: 300px;
+    min-height: 490px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+.card img {
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h3, h6, p {
+    margin: 10px 20px;
+}
+
+.card p {
+    text-align: justify;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-top: 110px;
+}
+
+.profile aside {
+    padding: 30px 10px;
+    width: 300px;
+    height: 660px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.247);
+}
+
+.profile aside h2 {
+    margin-bottom: 25px;
+}
+
+.profile aside img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.profile aside h6 {
+    color: #b3afaf;
+    letter-spacing: 3px;
+}
+
+.profile aside p {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+    font-family: 'Manrope', sans-serif;
+}
+
+#gallery {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+}
+
+#gallery .image {
+    margin: 5px;
+}
+
+#gallery .image img {
+    width: 400px;
+    height: 270px;
+}
+
+#gallery .image img:hover{
+    filter: grayscale(100%);
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 100px 0px;
+    flex-wrap: wrap;
+}
+
+.social-media {
+    margin: 0px 25px;
+}
+
+.social-media a i{
+    color: #000;
+}
+
+footer {
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(17, 17, 17);
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #fff;
+}
