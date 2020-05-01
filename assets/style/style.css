@@ -155,6 +155,10 @@ span {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 32px;
+}
+
 #wisata{
     margin-top: 15px;
     display: flex;
@@ -306,9 +310,9 @@ footer p {
         font-size: 12px;
     }
 
-    /* .slider img {
-        height: 500px;
-    } */
+    h1 {
+        font-size: 23px;
+    }
 
     #wisata {
         display: unset;
