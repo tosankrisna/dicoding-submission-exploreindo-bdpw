@@ -63,17 +63,15 @@ nav li:hover {
     cursor: pointer;
 }
 
-.wrap,
-.slide-content {
+.jumbotron, .slide-content {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.wrap {
+.jumbotron {
   position: relative;
 }
 
@@ -84,13 +82,13 @@ nav li:hover {
 }
 
 .slide1 {
-  background-image: url("https://static.pexels.com/photos/302889/pexels-photo-302889.jpeg");
+    background-image: url('../img/1.jpg');
 }
 .slide2 {
-  background-image: url("https://static.pexels.com/photos/302892/pexels-photo-302892.jpeg");
+    background-image: url('../img/2.jpg');
 }
 .slide3 {
-  background-image: url("https://static.pexels.com/photos/226633/pexels-photo-226633.jpeg");
+    background-image: url('../img/3.jpg');
 }
 
 .slide-content {
@@ -101,55 +99,40 @@ nav li:hover {
   text-align: center;
 }
 
-.slide-content span {
-  font-size: 5rem;
+.slide-content h3 {
+  font-size: 3em;
   color: #fff;
+}
+
+.slide-content p {
+    color: #fff;
+    font-size: 24px;
 }
 
 .arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-top: -35px;
   width: 0;
   height: 0;
-  border-style: solid;
 }
 
 #arrow-left {
-  border-width: 30px 40px 30px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 0;
-  margin-left: 30px;
+    left: 0;
+    color: #fff;
+    left: 3%;
 }
 
 #arrow-right {
-  border-width: 30px 0 30px 40px;
-  border-color: transparent transparent transparent #fff;
-  right: 0;
-  margin-right: 30px;
-}
-
-
-.prev-btn, .next-btn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: #000;
-    font-weight: bold;
-    font-size: 28px;
-    transition: 0.5s ease;
-    border: none;
-    margin: 0px 10px;
-    border-radius: 3px;
-    user-select: none;
-    outline: none;
-}
-
-.next-btn {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    color: #fff;
+    right: 5%;
+}
+
+.arrow span {
+    width: 100px;
+    font-size: 30px;
+    font-weight: bold;
 }
   
 span {
@@ -309,12 +292,16 @@ footer p {
 
 @media screen and (max-width: 1000px) {
     nav {
-        padding: 10px;
+        padding: 5px 10px;
     }
 
     nav li {
         margin: 5px 12px;
         font-size: 12px;
+    }
+
+    .logo {
+        padding: 10px;
     }
 
     .logo h1 {
@@ -335,5 +322,23 @@ footer p {
 
     #gallery .image img{
         width: 100%;
+    }
+
+    .jumbotron, .slide-content {
+        height: 50vh;
+    }
+
+    .slide-content h3 {
+        font-size: 30px;
+    }
+      
+    .slide-content p {
+          font-size: 18px;
+    }
+    
+    #arrow-right {
+        right: 0;
+        color: #fff;
+        right: 8%;
     }
 }
