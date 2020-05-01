@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     margin: 0;
@@ -159,6 +160,12 @@ h1 {
     font-size: 32px;
 }
 
+.logo h1 {
+    font-size: 42px;
+    font-weight: normal;
+    font-family: 'Lobster', cursive;
+}
+
 #wisata{
     margin-top: 15px;
     display: flex;
@@ -310,8 +317,8 @@ footer p {
         font-size: 12px;
     }
 
-    .logo img {
-        width: 170px;
+    .logo h1 {
+        font-size: 32px;
     }
 
     h1 {
