@@ -9,6 +9,9 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="">
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -17,19 +20,27 @@
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
-        <div class="carousel">
-            <div class="slider">
-                <img src="./assets/img/bg.jpg" alt="" srcset="">
+        <div class="wrap">
+            <div id="arrow-left" class="arrow"></div>
+            <div id="slider">
+              <div class="slide slide1">
+                <div class="slide-content">
+                  <span>Image One</span>
+                </div>
+              </div>
+              <div class="slide slide2">
+                <div class="slide-content">
+                  <span>Image Two</span>
+                </div>
+              </div>
+              <div class="slide slide3">
+                <div class="slide-content">
+                  <span>Image Three</span>
+                </div>
+              </div>
             </div>
-            <!-- <div class="slider">
-                <img src="./assets/img/bg.jpg" alt="" srcset="">
-            </div>
-            <div class="slider">
-                <img src="./assets/img/bg.jpg" alt="" srcset="">
-            </div> -->
-        </div>
-        <button disabled class="prev-btn">&#10094;</button>
-        <button class="next-btn">&#10095;</button>
+            <div id="arrow-right" class="arrow"></div>
+          </div>
     </header>
 
     <main>
