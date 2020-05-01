@@ -310,6 +310,10 @@ footer p {
         font-size: 12px;
     }
 
+    .logo img {
+        width: 170px;
+    }
+
     h1 {
         font-size: 23px;
     }
