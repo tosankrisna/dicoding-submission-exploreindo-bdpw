@@ -34,7 +34,7 @@ nav {
     padding: 15px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
@@ -99,14 +99,28 @@ nav li:hover {
   text-align: center;
 }
 
+.slide-content::before {
+    content: '';
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .slide-content h3 {
   font-size: 3em;
   color: #fff;
+  z-index: 2;
 }
 
 .slide-content p {
     color: #fff;
     font-size: 24px;
+    z-index: 2;
 }
 
 .arrow {
@@ -115,6 +129,7 @@ nav li:hover {
   top: 50%;
   width: 0;
   height: 0;
+  z-index: 2;
 }
 
 #arrow-left {
@@ -325,7 +340,7 @@ footer p {
     }
 
     .jumbotron, .slide-content {
-        height: 50vh;
+        height: 60vh;
     }
 
     .slide-content h3 {
