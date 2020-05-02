@@ -1,15 +1,15 @@
 // ambil elemen yang diperlukan
 const images = document.querySelectorAll(".slide");
-const prevBtn = document.querySelector("#arrow-left");
-const nextBtn = document.querySelector("#arrow-right");
+const prevBtn = document.querySelector("#left-button");
+const nextBtn = document.querySelector("#right-button");
   
 // atur kondisi awal
-let current = 0;
+let i = 0;
 
 // fungsi resetDisplay untuk menghilangkan gambar dengan display none sesuai index gambar pada looping
 function resetDisplay() {
-  for (let i = 0; i < images.length; i++) {
-    images[i].style.display = "none";
+  for (let j = 0; j < images.length; j++) {
+    images[j].style.display = "none";
   }
 }
 
@@ -19,34 +19,28 @@ function startSlide() {
   images[0].style.display = "block";
 }
 
-// Untuk menampilkan gambar sebelumnya
-function prevSlide() {
-  resetDisplay();
-  images[current - 1].style.display = "block";
-  current--;
-}
-
-// Untuk menampilkan gambar selanjutnya
-function nextSlide() {
-  resetDisplay();
-  images[current + 1].style.display = "block";
-  current++;
-}
-
 // Menjalankan fungsi ketika tombol prevBtn di klik
 prevBtn.addEventListener("click", function() {
-  if (current === 0) {
-    current = images.length;
+  if (i == 0) {
+    i = images.length;
   }
-  prevSlide();
+
+  resetDisplay();
+
+  images[i - 1].style.display = "block";
+  i--;
 });
 
 // Menjalankan fungsi ketika tombol nextBtn di klik
 nextBtn.addEventListener("click", function() {
-  if (current === images.length - 1) {
-    current = -1;
+  if (i == images.length - 1) {
+    i = -1;
   }
-  nextSlide();
+
+  resetDisplay();
+
+  images[i + 1].style.display = "block";
+  i++;
 });
 
 // jalankan fungsi startSlide() setiap kali web dijalankan
