@@ -327,9 +327,8 @@ footer p {
     }
 
     #gallery {
-        margin-top: 0;
         width: 100%;
-        padding: 50px 0px 0px 0px;
+        padding: 70px 0px 0px 0px;
     }
 
     #gallery .image img{
