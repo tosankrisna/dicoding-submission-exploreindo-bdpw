@@ -344,7 +344,7 @@ footer p {
     }
 
     .jumbotron, .slide-content {
-        height: 100vh;
+        height: 80vh;
     }
 
     .slide-content h3 {
@@ -355,7 +355,7 @@ footer p {
           font-size: 18px;
     }
     
-    #arrow-right {
+    #right-button {
         right: 0;
         color: #fff;
         right: 8%;
