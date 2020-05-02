@@ -1,82 +1,53 @@
-// // ambil elemen yang dibutuhkan
-// const slider = document.querySelector('.slider');
-// const sliderImg = document.querySelectorAll('.slider img');
-// const btnPrev = document.querySelector('.prev-btn');
-// const btnNext = document.querySelector('.next-btn');
+// ambil elemen yang diperlukan
+const images = document.querySelectorAll(".slide");
+const prevBtn = document.querySelector("#arrow-left");
+const nextBtn = document.querySelector("#arrow-right");
+  
+// atur kondisi awal
+let current = 0;
 
-// // atur kondisi awal
-// let i = 0;
-
-// // jalankan ketika tombol next di klik
-// btnNext.addEventListener('click', function() {
-//     sliderImg[i].style.display = 'none';
-//     btnPrev.disabled = false;
-    
-//     if(i == 1) {
-//         btnNext.disabled = true;
-//     }
-
-//     i++;
-// });
-
-// // jalankan ketika tombol prev di klik
-// btnPrev.addEventListener('click', function() {
-//     sliderImg[i - 1].style.display = 'block';
-//     btnNext.disabled = false;
-
-//     if(i == 1) {
-//         btnPrev.disabled = true;
-//     }
-
-//     i--;
-// });
-
-let sliderImages = document.querySelectorAll(".slide"),
-  arrowLeft = document.querySelector("#arrow-left"),
-  arrowRight = document.querySelector("#arrow-right"),
-  current = 0;
-
-// Clear all images
-function reset() {
-  for (let i = 0; i < sliderImages.length; i++) {
-    sliderImages[i].style.display = "none";
+// fungsi resetDisplay untuk menghilangkan gambar dengan display none sesuai index gambar pada looping
+function resetDisplay() {
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
   }
 }
 
-// Init slider
+// fungsi start untuk mengubah gambar pertama menjadi display block
 function startSlide() {
-  reset();
-  sliderImages[0].style.display = "block";
+  resetDisplay();
+  images[0].style.display = "block";
 }
 
-// Show prev
-function slideLeft() {
-  reset();
-  sliderImages[current - 1].style.display = "block";
+// Untuk menampilkan gambar sebelumnya
+function prevSlide() {
+  resetDisplay();
+  images[current - 1].style.display = "block";
   current--;
 }
 
-// Show next
-function slideRight() {
-  reset();
-  sliderImages[current + 1].style.display = "block";
+// Untuk menampilkan gambar selanjutnya
+function nextSlide() {
+  resetDisplay();
+  images[current + 1].style.display = "block";
   current++;
 }
 
-// Left arrow click
-arrowLeft.addEventListener("click", function() {
+// Menjalankan fungsi ketika tombol prevBtn di klik
+prevBtn.addEventListener("click", function() {
   if (current === 0) {
-    current = sliderImages.length;
+    current = images.length;
   }
-  slideLeft();
+  prevSlide();
 });
 
-// Right arrow click
-arrowRight.addEventListener("click", function() {
-  if (current === sliderImages.length - 1) {
+// Menjalankan fungsi ketika tombol nextBtn di klik
+nextBtn.addEventListener("click", function() {
+  if (current === images.length - 1) {
     current = -1;
   }
-  slideRight();
+  nextSlide();
 });
 
+// jalankan fungsi startSlide() setiap kali web dijalankan
 startSlide();

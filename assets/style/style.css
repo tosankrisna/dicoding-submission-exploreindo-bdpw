@@ -56,6 +56,7 @@ nav li {
 nav li a{
     text-decoration: none;
     color: rgb(58, 58, 58);
+    z-index: 300 !important;
 }
 
 nav li:hover {
@@ -333,10 +334,15 @@ footer p {
 
     #gallery {
         width: 100%;
+        padding: 30px 0px 0px 0px;
     }
 
     #gallery .image img{
         width: 100%;
+    }
+
+    #contact {
+        margin: 50px 0px;
     }
 
     .jumbotron, .slide-content {
@@ -355,5 +361,9 @@ footer p {
         right: 0;
         color: #fff;
         right: 8%;
+    }
+
+    .profile {
+        margin-top: 60px;
     }
 }
