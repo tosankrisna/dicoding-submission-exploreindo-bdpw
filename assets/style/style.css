@@ -302,11 +302,7 @@ footer p {
 
 @media screen and (max-width: 1000px) {
     nav {
-        padding: 0px 10px;
-    }
-
-    nav ul {
-        padding: 15px 0px;
+        padding: 10px;
     }
 
     nav li {
