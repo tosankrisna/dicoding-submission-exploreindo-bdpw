@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
@@ -25,8 +24,11 @@ header {
     justify-content: center;
 }
 
-.logo img {
-    width: 200px;
+
+.logo h1 {
+    font-size: 42px;
+    font-weight: normal;
+    font-family: 'Lobster', cursive;
 }
 
 nav {
@@ -155,12 +157,6 @@ span {
 
 h1 {
     font-size: 32px;
-}
-
-.logo h1 {
-    font-size: 42px;
-    font-weight: normal;
-    font-family: 'Lobster', cursive;
 }
 
 #wisata{
@@ -306,11 +302,15 @@ footer p {
 
 @media screen and (max-width: 1000px) {
     nav {
-        padding: 5px 10px;
+        padding: 0px 10px;
+    }
+
+    nav ul {
+        padding: 15px 0px;
     }
 
     nav li {
-        margin: 5px 12px;
+        margin: 0px 12px;
         font-size: 12px;
     }
 
@@ -341,11 +341,11 @@ footer p {
     }
 
     #contact {
-        margin: 50px 0px;
+        margin: 60px 0px;
     }
 
     .jumbotron, .slide-content {
-        height: 80vh;
+        height: 70vh;
     }
 
     .slide-content h3 {
