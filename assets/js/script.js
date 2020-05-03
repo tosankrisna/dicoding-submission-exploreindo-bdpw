@@ -1,7 +1,7 @@
 // ambil elemen yang diperlukan
 const images = document.querySelectorAll(".slide");
-const prevBtn = document.querySelector("#left-button");
-const nextBtn = document.querySelector("#right-button");
+const prevBtn = document.querySelector(".left-button");
+const nextBtn = document.querySelector(".right-button");
   
 // atur kondisi awal
 let i = 0;
@@ -11,12 +11,6 @@ function resetDisplay() {
   for (let j = 0; j < images.length; j++) {
     images[j].style.display = "none";
   }
-}
-
-// fungsi start untuk mengubah gambar pertama menjadi display block
-function startSlide() {
-  resetDisplay();
-  images[0].style.display = "block";
 }
 
 // Menjalankan fungsi ketika tombol prevBtn di klik
@@ -43,5 +37,7 @@ nextBtn.addEventListener("click", function() {
   i++;
 });
 
-// jalankan fungsi startSlide() setiap kali web dijalankan
-startSlide();
+// jalankan fungsi resetDisplay pertama setiap kali web diakses, 
+// lalu buat hanya gambar pertama menjadi block
+resetDisplay();
+images[0].style.display = "block";
